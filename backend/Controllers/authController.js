@@ -54,6 +54,7 @@ const login = async (req,res)=>{
             "secret-123",            //process.env.JWT_SECRET,
             {expiresIn: '24h'}
         )
+        
 
         res.status(200).json({
             success: true,
